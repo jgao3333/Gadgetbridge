@@ -688,6 +688,7 @@ public class FossilHRWatchAdapter extends FossilWatchAdapter {
                     FileOutputStream fos = new FileOutputStream(f);
                     fos.write(fileData);
                     fos.close();
+                    GB.toast("saved file data", Toast.LENGTH_SHORT, GB.INFO);
                 } catch (IOException e) {
                     GB.log("activity file error", GB.ERROR, e);
                 }
