@@ -320,13 +320,13 @@ public class FossilHRWatchAdapter extends FossilWatchAdapter {
                 Widget w = widgets.get(i);
                 if(!(w instanceof CustomWidget)){
                     if(drawCircles) {
-                        widgetImages.add(AssetImageFactory.createAssetImage(
+                        /*widgetImages.add(AssetImageFactory.createAssetImage(
                                 circleBitmap,
                                 true,
                                 w.getAngle(),
                                 w.getDistance(),
                                 1
-                        ));
+                        ));*/
                     }
                     continue;
                 };
@@ -337,7 +337,7 @@ public class FossilHRWatchAdapter extends FossilWatchAdapter {
                 Canvas widgetCanvas = new Canvas(widgetBitmap);
 
                 if(drawCircles){
-                    widgetCanvas.drawBitmap(circleBitmap, 0, 0, null);
+                    // widgetCanvas.drawBitmap(circleBitmap, 0, 0, null);
                 }
 
                 for (CustomWidgetElement element : widget.getElements()) {
